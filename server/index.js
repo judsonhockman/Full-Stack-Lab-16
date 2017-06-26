@@ -132,6 +132,7 @@ function callProcedure(procedureName, args) {
                 }
                 var callString = 'CALL ' + procedureName + '(' + placeholders + ');';
                 connection.query(callString, args, function (err, resultsets) {
+                   connection.release();
                     if (err) {
                         reject(err);
                     } else {
