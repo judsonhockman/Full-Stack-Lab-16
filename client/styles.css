@@ -3,8 +3,61 @@
     border-style: 4em dotted darkblue;
     height: 4em;
     width: 12em;
+    text-align: center;
 }
-#chirp-button {
-    color: grey;
-    background-color: black;
+body {
+    background-color: lightgrey;
+}
+
+.chirp-box {
+    background-color: pink;
+    width: 100%;
+    max-width: 500px;
+    height: 4em;
+    margin: 0 auto; /* this says not to worry about top and bottom (zero) and to set left and right margin to auto which will make the sides equal */
+    text-align: center;
+    border: .25em solid darkgreen;
+    line-height: 4em;
+    vertical-align: middle;
+}
+
+#chirp-list {
+    background-color: beige;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chirp {
+    border-bottom: 1px solid black;
+    padding: 2em 1em;  /* nothing inside the box can get within 2em or 1em of the top/bottom or sides */
+    position: relative;
+}
+
+.chirp .delete-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 1em;
+}
+
+.chirp p {
+    margin-top: 0;
+}
+
+.chirp h5 {
+    margin-bottom: 0;
+}
+
+.enhanced-button {
+    background-color: transparent;
+    border: 1px solid darkblue;
+    color: darkblue;
+    border-radius: 0.5em;
+}
+
+.enhanced-button.red {
+    border-color: red;
+    color: red;
 }

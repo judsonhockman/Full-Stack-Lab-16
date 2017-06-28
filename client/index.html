@@ -2,17 +2,19 @@
 <html>
     <head>
         <title> Lab 16
-            Chirp Express: The Sequel Contiuation (CRUD)
-            aka CRUD Is Your Friend.
+            Chirp model with last updates
         </title>
        <link rel="stylesheet" href="styles.css">
     
     </head>
 <body>
    <div class="chirp-box">
-   <input type="text" placeholder="Write your chirp here!" id="chirp-field">
-    <button id="chirp-button" disabled>Chirp!</button> 
-    <!--disabled above is a property, therefore we use .prop in scripts.js-->
+       <select id="user-selector">
+           <option value="">Please choose a user</option>
+       </select>
+   <input type="text" placeholder="Type your chirp here!" id="chirp-field">
+    <button class="enhanced-button" id=chirp-button disabled>Chirp!</button> 
+   
        </div>
        
    <div id="chirp-list"></div>
@@ -26,3 +28,4 @@
 
     </body>
 </html>
+       
